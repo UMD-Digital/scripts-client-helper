@@ -1,0 +1,21 @@
+{
+  "name": "@universityofmaryland/helpers",
+  "version": "0.0.1",
+  "description": "Commonly used functions ",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc -outDir dist",
+    "start": "tsc -w -outDir dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "typescript": "^4.0.3"
+  }
+}

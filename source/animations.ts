@@ -7,6 +7,8 @@ type Params = {
 type ScrollTo = (arg: Params) => void;
 
 export const scrollTo: ScrollTo = ({ element, spread = 30, frames = 60 }) => {
+  if (!element) return;
+
   const documentBody =
     document.documentElement.scrollTop || document.body.scrollTop;
   const elm = document.body;
